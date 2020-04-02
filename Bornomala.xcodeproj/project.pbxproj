@@ -13,6 +13,12 @@
 		0D4709EA24363009007F6818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4709E824363009007F6818 /* Main.storyboard */; };
 		0D4709EC2436301A007F6818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4709EB2436301A007F6818 /* Assets.xcassets */; };
 		0D4709EF2436301A007F6818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4709ED2436301A007F6818 /* LaunchScreen.storyboard */; };
+		0DD4DBBA24363833004B7EAC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4DBB924363833004B7EAC /* OnboardingPageViewController.swift */; };
+		0DD4DBBC24363857004B7EAC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4DBBB24363857004B7EAC /* OnboardingViewController.swift */; };
+		0DD4DBBE243638BD004B7EAC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4DBBD243638BC004B7EAC /* Onboarding.storyboard */; };
+		0DD4DBC32436399B004B7EAC /* shutter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4DBC22436399B004B7EAC /* shutter.mp3 */; };
+		0DD4DBC724364472004B7EAC /* ArtScene.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD4DBC624364472004B7EAC /* ArtScene.scnassets */; };
+		0DD4DBCB24364965004B7EAC /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4DBCA24364965004B7EAC /* OnboardingContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		0D4709EB2436301A007F6818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4709EE2436301A007F6818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4709F02436301A007F6818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD4DBB924363833004B7EAC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		0DD4DBBB24363857004B7EAC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		0DD4DBBD243638BC004B7EAC /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		0DD4DBC22436399B004B7EAC /* shutter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shutter.mp3; path = ../../../shutter.mp3; sourceTree = "<group>"; };
+		0DD4DBC624364472004B7EAC /* ArtScene.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ArtScene.scnassets; sourceTree = "<group>"; };
+		0DD4DBCA24364965004B7EAC /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +68,19 @@
 		0D4709E124363009007F6818 /* Bornomala */ = {
 			isa = PBXGroup;
 			children = (
+				0DD4DBC22436399B004B7EAC /* shutter.mp3 */,
 				0D4709E224363009007F6818 /* AppDelegate.swift */,
 				0D4709E424363009007F6818 /* SceneDelegate.swift */,
 				0D4709E624363009007F6818 /* ViewController.swift */,
 				0D4709E824363009007F6818 /* Main.storyboard */,
+				0DD4DBBD243638BC004B7EAC /* Onboarding.storyboard */,
 				0D4709EB2436301A007F6818 /* Assets.xcassets */,
 				0D4709ED2436301A007F6818 /* LaunchScreen.storyboard */,
 				0D4709F02436301A007F6818 /* Info.plist */,
+				0DD4DBC624364472004B7EAC /* ArtScene.scnassets */,
+				0DD4DBB924363833004B7EAC /* OnboardingPageViewController.swift */,
+				0DD4DBCA24364965004B7EAC /* OnboardingContentViewController.swift */,
+				0DD4DBBB24363857004B7EAC /* OnboardingViewController.swift */,
 			);
 			path = Bornomala;
 			sourceTree = "<group>";
@@ -128,6 +146,9 @@
 				0D4709EF2436301A007F6818 /* LaunchScreen.storyboard in Resources */,
 				0D4709EC2436301A007F6818 /* Assets.xcassets in Resources */,
 				0D4709EA24363009007F6818 /* Main.storyboard in Resources */,
+				0DD4DBBE243638BD004B7EAC /* Onboarding.storyboard in Resources */,
+				0DD4DBC724364472004B7EAC /* ArtScene.scnassets in Resources */,
+				0DD4DBC32436399B004B7EAC /* shutter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4709E724363009007F6818 /* ViewController.swift in Sources */,
+				0DD4DBCB24364965004B7EAC /* OnboardingContentViewController.swift in Sources */,
+				0DD4DBBC24363857004B7EAC /* OnboardingViewController.swift in Sources */,
+				0DD4DBBA24363833004B7EAC /* OnboardingPageViewController.swift in Sources */,
 				0D4709E324363009007F6818 /* AppDelegate.swift in Sources */,
 				0D4709E524363009007F6818 /* SceneDelegate.swift in Sources */,
 			);
