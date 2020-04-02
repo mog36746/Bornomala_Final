@@ -1,24 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="LPc-KA-WsG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="2RW-ub-r8q" customClass="ViewController" customModule="Bornomala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3r3-Hk-OPn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-dg-jTg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-n9-g5t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-UQ-AqK">
+                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ZH8-Jv-0lA"/>
+                                    <constraint firstAttribute="height" constant="50" id="dbf-x5-x65"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="camera_button"/>
+                                <connections>
+                                    <action selector="onSnapButtonPress:" destination="2RW-ub-r8q" eventType="touchUpInside" id="Yea-Ug-ZrZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gej-DK-WMm" firstAttribute="trailing" secondItem="A0g-n9-g5t" secondAttribute="trailing" id="4pm-b6-0qZ"/>
+                            <constraint firstItem="CLY-UQ-AqK" firstAttribute="centerX" secondItem="3r3-Hk-OPn" secondAttribute="centerX" id="8Jf-Ym-fVk"/>
+                            <constraint firstItem="A0g-n9-g5t" firstAttribute="leading" secondItem="Gej-DK-WMm" secondAttribute="leading" id="Bzw-X0-ZLI"/>
+                            <constraint firstItem="Gej-DK-WMm" firstAttribute="bottom" secondItem="CLY-UQ-AqK" secondAttribute="bottom" constant="20" id="EFg-7K-iZx"/>
+                            <constraint firstItem="LgW-dg-jTg" firstAttribute="top" secondItem="Gej-DK-WMm" secondAttribute="top" id="Enc-xo-ngZ"/>
+                            <constraint firstItem="Gej-DK-WMm" firstAttribute="trailing" secondItem="LgW-dg-jTg" secondAttribute="trailing" id="IiD-3V-hpA"/>
+                            <constraint firstItem="LgW-dg-jTg" firstAttribute="leading" secondItem="Gej-DK-WMm" secondAttribute="leading" id="b44-n8-8AC"/>
+                            <constraint firstItem="Gej-DK-WMm" firstAttribute="bottom" secondItem="A0g-n9-g5t" secondAttribute="bottom" id="f0r-60-A8H"/>
+                            <constraint firstItem="A0g-n9-g5t" firstAttribute="top" secondItem="Gej-DK-WMm" secondAttribute="top" id="la4-Hd-fRD"/>
+                            <constraint firstItem="Gej-DK-WMm" firstAttribute="bottom" secondItem="LgW-dg-jTg" secondAttribute="bottom" id="ymq-qd-tVK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gej-DK-WMm"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="LgW-dg-jTg" id="ZYl-bT-GO1"/>
+                        <outlet property="shutterView" destination="A0g-n9-g5t" id="I5B-Er-5pf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQ2-V9-HHO" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera_button" width="16" height="16"/>
+    </resources>
 </document>
